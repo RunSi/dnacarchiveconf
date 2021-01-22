@@ -4,29 +4,22 @@
 
 ---
 
-**ToDo's:** 
-
-Allow user input to create own password for zip files.
-
-Allow user input to determine name of downloaded zip file.
-
-Prompt user for management IPs for Devices to retrieve rather than all devices.  
-
-Test on Linux
-
 
 ## Motivation
 
 DNAC 2.1.2 introduced a REST endpoint for device configuration retrieval.  This script demonstrates how to leverage this endpoint to retrieve startup and running configuration of all devices managed by DNAC.
 
+## Installation
 
-## Technologies & Frameworks Used
-
-To function this script uses both the Requests library and the DNA Center SDK (dnacentersdk).  For the script to work please make sure that this libraries are in your project python (virtual environment).  
-To install the requirements 
+To install please clone this directory.  
+Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
+## Technologies & Frameworks Used
+
+To function this script uses both the Requests library and the DNA Center SDK (dnacentersdk).  For the script to work please make sure that this libraries are in your project python (virtual environment).  
+
 
 
 ## Usage
@@ -57,13 +50,16 @@ To unzip the files then please make use of the Mac utility (available from the A
 The downloaded zip file is password protected.  
 The password to de-encrypt the files is **Cisco123#**
 
-## Installation
+**ToDo's:** 
 
-To install please clone this directory.  
-Install the requirements
-```bash
-pip install -r requirements.txt
-```
+Allow user input to create own password for zip files.
+
+Allow user input to determine name of downloaded zip file.
+
+Prompt user for management IPs for Devices to retrieve rather than all devices.  
+
+Test on Linux
+
 
 ## Authors & Maintainers
 
@@ -73,7 +69,7 @@ Smart people responsible for the creation and maintenance of this project:
 
 ## Credits
 
-Give proper credit.  Inspired by another project or article?  Was your work made easier by a tutorial?  Include links to the people, projects, and resources that were influential in the creation of this project.
+Thanks to Russ Widener for sharing the Cisco CX technote created by Tomas De Leon that provided documentation on the Configuration archive REST endpoint
 
 ## License
 
